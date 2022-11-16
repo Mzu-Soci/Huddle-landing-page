@@ -7,15 +7,17 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: hsl(257, 40%, 49%);
+
 }
 
 main {
-    background-color: hsl(257, 40%, 49%);
+    /* background-color: hsl(257, 40%, 49%); */
 }
 
 .container {
-    /* max-width: 375px; */
     margin: auto;
+    border: orange 1px solid;
 }
 
 .hero_bg {
@@ -23,38 +25,28 @@ main {
 }
 
 .hero_section {
-    /* padding: 2em; */
     position: relative;
     z-index: 1;
 }
 
 .logo {
     height: 35px;
-    /* margin-bottom: 3em; */
-}
-
-.hero_image {
-    /* max-width: 100%; */
 }
 
 .text_content {
-    /* padding: 2em; */
-    text-align: center;
+    /* text-align: center; */
     color: white;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: x-large;
-    /* max-width: 300px; */
-    /* margin-bottom: .6em; */
 }
 
-p{
+p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.7em;
-    /* margin-bottom: 1.5em; */
 }
 
 button {
@@ -64,8 +56,6 @@ button {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: .05em;
-    /* margin-bottom: 6em; */
-    /* padding: 1em 6em; */
 }
 
 .social_icon {
@@ -73,8 +63,13 @@ button {
     border-radius: 100px;
     color: white;
     height: 15px;
-    /* padding: .3em; */
-    /* margin: .1em; */
+    padding: .3em;
+    margin: .1em;
+}
+
+.social_icon {
+    padding: .3em;
+    margin: .1em;
 }
 
 .social_link {
@@ -85,24 +80,67 @@ button {
     font-size: 11px;
     text-align: center;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 1200px;
+        display: flex;
+    }
+
+    .hero_section {
+        max-width: 50%;
+        padding: 2em;
+        /* border: solid white 1px; */
+    }
+
+    .hero_image {
+        max-width: 100%;
+        margin: 4em 0 2em 0;
+    }
+
+    .text_content {
+        max-width: 45%;
+        /* border: solid red 1px; */
+        margin: 11em 0 2em 0;
+    }
+
+    h1 {
+        max-width: 60%;
+        margin-bottom: 1em;
+    }
+
+    p {
+        margin-bottom: 1.5em;
+        max-width: 92%;
+    }
+
+    button {
+        margin-bottom: 11.5em;
+        padding: .8em 4em;
+    }
+
+    .social_section {
+        text-align: right;
+        max-width: 90%;
+
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
     .container {
         max-width: 375px;
-        /* margin: auto; */
     }
 
     .hero_section {
         padding: 2em;
-        /* position: relative; */
-        /* z-index: 1; */
     }
 
     .logo {
-        /* height: 35px; */
         margin-bottom: 3em;
     }
 
@@ -112,42 +150,21 @@ button {
 
     .text_content {
         padding: 2em;
-        /* text-align: center; */
-        /* color: white; */
+        text-align: center;
     }
 
     h1 {
-        /* font-family: 'Poppins', sans-serif; */
-        /* font-size: x-large; */
         max-width: 300px;
         margin-bottom: .6em;
     }
 
     p{
-        /* font-family: 'Open Sans', sans-serif; */
-        /* font-weight: 400; */
-        /* line-height: 1.7em; */
         margin-bottom: 1.5em;
     }
 
     button {
-        /* border-radius: 100px; */
-        /* border-style: none; */
-        /* color: hsl(257, 40%, 49%); */
-        /* font-family: 'Poppins', sans-serif; */
-        /* font-weight: bold; */
-        /* letter-spacing: .05em; */
+        padding: .8em 5em;
         margin-bottom: 6em;
-        padding: 1em 6em;
-    }
-
-    .social_icon {
-        /* border: solid 2px white; */
-        /* border-radius: 100px; */
-        /* color: white; */
-        /* height: 15px; */
-        padding: .3em;
-        margin: .1em;
     }
 
 }
