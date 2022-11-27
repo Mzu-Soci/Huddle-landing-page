@@ -12,58 +12,77 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>
-      Frontend Mentor | Huddle landing page with single introductory section
-    </title>
+    <title>Frontend Mentor | Stats preview card component</title>
 
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
     <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="container">
-      <!-- <main> -->
-      <img class="mobile_bg" src="images/bg-mobile.svg" alt="" />
-      <img class="desktop_bg" src="images/bg-desktop.svg" alt="" />
-
-
-      <div class="hero_section">
-        <img src="images/logo.svg" alt="" class="logo" />
-        <img src="images/illustration-mockups.svg" alt="" class="hero_image" />
-      </div>
-
-      <div class="text_content">
-        <h1 class="body_h1">Build The Community Your Fans Will Love</h1>
-        <p>
-          Huddle re-imagines the way we build communities. You have a voice, but
-          so does your audience. Create connections with your users as you
-          engage in genuine discussion.
-        </p>
-        <button>Register</button>
-        <div class="social_section">
-          <a href="" class="social_link"
-            ><img class="social_icon" src="images/facebook-icon.svg" alt=""
-          /></a>
-          <a href="" class="social_link"
-            ><img class="social_icon" src="images/twitter-icon.svg" alt=""
-          /></a>
-          <a href="" class="social_link"
-            ><img class="social_icon" src="images/instagram-icon.svg" alt=""
-          /></a>
+    <div class="wrapper">
+      <div class="container">
+        <div class="image_container_mobile">
+          <div class="overlay_mobile"></div>
         </div>
-      </div>
-      <!-- </main> -->
 
-      <!-- <footer>
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
-        </p>
-      </footer> -->
+        <div class="text_container">
+          <h1 class="heading_h1">
+            Get <span>insights</span> that help your business grow.
+          </h1>
+          <p class="main_p">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <div class="stats_container">
+            <div class="stats">
+              <h1 class="stats_h1">10k+</h1>
+              <p class="stats_p">companies</p>
+            </div>
+            <div class="stats">
+              <h1 class="stats_h1">314</h1>
+              <p class="stats_p">templates</p>
+            </div>
+
+            <div class="stats">
+              <h1 class="stats_h1">12m+</h1>
+              <p class="stats_p">queries</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img
+            class="desktop_image"
+            src="images/image-header-desktop.jpg"
+            alt=""
+          />
+          <div class="overlay"></div>
+        </div>
+
+        <!-- <div class="image_container">
+          <div class="overlay"></div>
+        </div> -->
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
     </div>
   </body>
 </html>
